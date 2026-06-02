@@ -30,11 +30,16 @@ svpflow1_64.dll - https://www.svp-team.com/wiki/Download (Avisynth and Vapoursyn
 
 input: 1080p 24fps video
 
-| Script | FPS | GPU Usage |
-| --- | --- | --- |
-| - | 24 | 10% |
-| motion_InterFrame_fast_gpu | 60 | 14% |
-| motion_InterFrame_medium_gpu | 60 | 15% |
-| motion_MBlock_x2 | 48 | 17% |
-| motion_MBlock2_x2 | 48 | 17% |
-| motion_MBlock2_x6 | 144 | 17% |
+| Script | FPS | GPU Usage | CPU Usage |
+| --- | --- | --- | --- |
+| - | 24 | 9% | 1% |
+| motion_InterFrame_fast_cpu | 60 | 12% | 2% |
+| motion_InterFrame_medium_cpu | 60 | 12% | 4% |
+| motion_InterFrame_fast_gpu | 60 | 20% | 2% |
+| motion_InterFrame_medium_gpu | 60 | 21% | 2% |
+| motion_MBlock_x2 | 48 | 15% | 2% |
+| motion_MBlock_x4 | 96 | 18% | 4% |
+| motion_MBlock_x6 | 144 | 18% | 7% |
+| motion_MBlock2_x2 | 48 | 15% | 2% |
+| motion_MBlock2_x4 | 96 | 17% | 7% |
+| motion_MBlock2_x6 | 144 | 17% | 11% |
