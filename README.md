@@ -1,6 +1,17 @@
 # Configs for PotPlayer to enable true motion
 
-## Config selecting
+## Installation
+
+Copy all from `potplayer/` to your `PotPlayer/` directory  
+
+**Note:** `potplayer` directory has x64 versions of dlls (x86 ones can be extracted from `all_plugins`).
+
+PotPlayer -> Preferences -> Video -> AviSynth:  
+1. ✔ Enable AviSynth  
+2. ✔ Add potplayer_source  
+3. Select `motion_*` in `Load script`  
+
+## Script selecting
 
 **TL;DR**: I prefer `motion_MBlock2` with multiplier depending on monitor refresh rate.
 
@@ -8,23 +19,6 @@ Scripts `motion_MBlock*` works as multiplier fps (ex.: 24 -> 48, 72, 96, 120, 14
 `motion_MBlock2` has better quality over `motion_MBlock`.  
 
 Scripts `motion_InterFrame` always set rate to 60 fps.  
-
-`potplayer` directory has x64 versions of dlls.  
-x86 versions can be extracted from `all_plugins`.  
-
-## Installation
-Copy all from `potplayer/` to your `PotPlayer/` directory  
-PotPlayer -> Preferences -> Video -> AviSynth:  
-1. ✔ Enable AviSynth  
-2. ✔ Add potplayer_source  
-3. Select `motion_*` in `Load script`  
-
-## Source 
-
-mvtools2.dll - https://github.com/pinterf/mvtools  
-AviSynth.dll - https://github.com/pinterf/AviSynthPlus  
-InterFrame2.avsi - https://www.spirton.com/interframe/
-svpflow1_64.dll - https://www.svp-team.com/wiki/Download (Avisynth and Vapoursynth plugins, since version 4.3.0 shows red rectangles on video using version 4.2.0)
 
 ## Performance comparison
 
@@ -43,3 +37,10 @@ input: 1080p 24fps video
 | motion_MBlock2_x2 | 48 | 15% | 2% |
 | motion_MBlock2_x4 | 96 | 17% | 7% |
 | motion_MBlock2_x6 | 144 | 17% | 11% |
+
+## Source 
+
+- mvtools2.dll - https://github.com/pinterf/mvtools  
+- AviSynth.dll - https://github.com/pinterf/AviSynthPlus  
+- InterFrame2.avsi - https://www.spirton.com/interframe/  
+- svpflow1_64.dll - https://www.svp-team.com/wiki/Download (Avisynth and Vapoursynth plugins)
