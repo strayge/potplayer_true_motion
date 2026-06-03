@@ -1,6 +1,6 @@
 ﻿AddAutoloadDir("#SCRIPTDIR/plugins")
 SetFilterMTMode("DEFAULT_MT_MODE", 2)
-SetMemoryMax(128)
+SetMemoryMax(1024)
 
 super=MSuper(pel=1, hpad=0, vpad=0)
 backward_1=MAnalyse(super, chroma=false, isb=true, blksize=32, blksizev=32, searchparam=3, plevel=0, search=3, badrange=(-24))
